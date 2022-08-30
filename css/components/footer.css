@@ -1,0 +1,142 @@
+.footer {
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 8rem 4rem 2.5rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer__header-heading {
+  width: 80%;
+}
+
+.footer__signup {
+  width: 70%;
+}
+.footer__signup-title {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 170%;
+  letter-spacing: 0.205em;
+}
+.footer__signup-text {
+  margin-bottom: 1.5rem;
+}
+.footer__signup-input-container {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.footer__signup-input {
+  border: none;
+  background-color: transparent;
+  width: 88%;
+  color: #ffffff;
+}
+.footer__signup-input:focus {
+  outline: none;
+}
+.footer__signup-input-icon {
+  filter: brightness(0) invert(1);
+  width: 10%;
+}
+.footer__signup-icons img:not(:last-child) {
+  margin-right: 1rem;
+}
+.footer__signup-icon {
+  width: 1.6rem;
+}
+.footer__signup-icon:hover {
+  cursor: pointer;
+}
+
+.footer__link-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.footer__link-title {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 170%;
+  letter-spacing: 0.205em;
+  margin-bottom: 2rem;
+}
+.footer__links {
+  display: flex;
+  flex-direction: column;
+}
+.footer__links li:not(:nth-child(1)) {
+  margin-bottom: 0.8rem;
+}
+.footer__link {
+  font-size: 1.4rem;
+  border-bottom: 1px solid;
+  border-color: transparent;
+}
+.footer__link:hover {
+  border-color: inherit;
+}
+.footer__copyright {
+  grid-column: 1/4;
+  font-size: 1.4rem;
+  line-height: 160%;
+  font-weight: 400;
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+@media only screen and (max-width: 900px) {
+  .footer__header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    margin-bottom: 2rem;
+  }
+  .footer__signup {
+    width: 90%;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    margin-bottom: 2rem;
+  }
+  .footer__link-group {
+    grid-column: 1/4;
+    grid-row: 3/4;
+  }
+  .footer__signup-input-icon {
+    filter: brightness(0) invert(1);
+    width: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .footer {
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 4rem 2rem 2rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer__link-group {
+    grid-column: 1/4;
+    grid-row: 3/4;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer__copyright {
+    grid-column: 1/4;
+    font-size: 1.4rem;
+    line-height: 160%;
+    font-weight: 400;
+    color: #ffffff;
+    opacity: 0.3;
+    justify-self: center;
+  }
+}

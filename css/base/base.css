@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+.container {
+  width: 100%;
+}
+@media screen and (min-width: 1920px) {
+  .container {
+    width: 192rem;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+@media screen and (max-width: 600px) {
+}

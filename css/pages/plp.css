@@ -1,0 +1,211 @@
+@import "../components/menu.css";
+.plp__header {
+  width: 100%;
+  background-image: url("../../assets/plpHeader.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.plp__header-logo {
+  width: 24rem;
+  height: 7.2rem;
+  margin-top: 9rem;
+  margin-bottom: 3.3rem;
+}
+.plp__header-text {
+  width: 70rem;
+  padding: 2.4rem 2.4rem 0 2.4rem;
+  background-color: #ffffff;
+  justify-self: flex-end;
+}
+
+.plp__body {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  padding: 2.5rem 4rem 4rem 4rem;
+}
+
+.plp__body-categories {
+  grid-column: 1/5;
+  margin: 0 auto;
+  display: flex;
+}
+.plp__body-categories div:not(:last-child) {
+  border-right: 1px solid #000000;
+}
+.body-categories__container {
+  padding: 1rem 8rem;
+  display: flex;
+}
+.body-categories__icon {
+  margin-right: 1rem;
+}
+.body-categories__text {
+  color: #000000;
+}
+
+.plp__body-btns {
+  grid-column: 1/5;
+  display: flex;
+  justify-content: space-between;
+}
+.plp__body-btns > label {
+  padding: 1rem 3.5rem;
+  border: 1px solid #f2f2f2;
+  display: flex;
+}
+.body-btns__input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.body-btns__icon {
+  margin-right: 1rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../assets/icons/icon-plus.svg");
+}
+.body-btns__input:checked ~ .body-btns__icon {
+  margin-right: 1rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../assets/icons/icon-minus.svg");
+}
+
+.plp__menu {
+  display: none;
+}
+.plp__menu--open {
+  display: block;
+  grid-column: 1/2;
+}
+.plp__carousel {
+  grid-column: 1/5;
+}
+.plp__carousel--short {
+  grid-column: 2/5;
+}
+.plp__carousel-item {
+  width: calc((100vw - 80px) / 4) !important;
+}
+
+@media screen and (max-width: 900px) {
+  .plp__body {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    padding: 2rem;
+  }
+  .plp__menu {
+    display: none;
+  }
+  .plp__carousel {
+    grid-column: 1/5;
+  }
+  .body-categories__container {
+    padding: 1rem 2rem;
+    display: flex;
+  }
+  .plp__header-text {
+    width: 100%;
+    padding: 2.4rem 2.4rem 0 2.4rem;
+    background-color: #ffffff;
+    justify-self: flex-end;
+  }
+  .plp__carousel-item {
+    width: calc((100vw - 40px) / 3) !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .plp__body {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    padding: 1.5rem 1.5rem 4rem 1.5rem;
+  }
+  .plp__header-text {
+    display: none;
+  }
+  .plp__header-logo {
+    width: 24rem;
+    height: 7.2rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+  .plp__header {
+    width: 100%;
+    background-image: url("../../assets/mobile/plpHeaderMobile.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .plp__body-btns > div {
+    padding: 1rem 5rem;
+    border: 1px solid #f2f2f2;
+    display: flex;
+  }
+  .plp__body-categories {
+    grid-column: 1/5;
+    margin: 0 auto 3rem auto;
+    display: flex;
+  }
+  .body-categories__container {
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .body-categories__icon {
+    margin: 0 1rem;
+  }
+  .body-categories__text {
+    color: #000000;
+    margin-right: 1rem;
+  }
+  .plp__carousel-item {
+    width: calc((100vw - 30px) / 2) !important;
+  }
+  .plp__menu--open {
+    display: block;
+    grid-column: 1/5;
+    grid-row: 3/4;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .plp__body-btns > div {
+    width: 50%;
+    padding: 1rem 0;
+    border: 1px solid #f2f2f2;
+    display: flex;
+    justify-content: center;
+  }
+  .body-categories__container {
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .body-categories__icon {
+    margin: 0 1rem;
+  }
+  .body-categories__text {
+    color: #000000;
+  }
+}

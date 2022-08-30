@@ -1,0 +1,11 @@
+.designer {
+  text-align: center;
+  width: 100%;
+}
+.designer__img {
+  width: 100%;
+}
+.designer__p {
+  font-weight: 600;
+  text-transform: capitalize;
+}

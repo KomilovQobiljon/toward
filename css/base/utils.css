@@ -1,0 +1,27 @@
+.mb--sm {
+  margin-bottom: 1rem;
+}
+.mb--md {
+  margin-bottom: 2rem;
+}
+.mb--bg {
+  margin-bottom: 4rem;
+}
+
+.mt--sm {
+  margin-top: 1rem;
+}
+.mt--md {
+  margin-top: 2rem;
+}
+.mt--bg {
+  margin-top: 4rem;
+}
+
+.pt--bg {
+  padding-top: 8rem !important;
+}
+
+.display-none {
+  display: none;
+}

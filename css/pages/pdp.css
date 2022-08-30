@@ -1,0 +1,249 @@
+.main {
+  padding: 0 4rem;
+}
+.pdp__product {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding: 0 0 7rem 0;
+}
+.pdp__product-carousel {
+  grid-column: 1/2;
+  display: flex;
+  align-items: center;
+}
+.pdp__product-details {
+  grid-column: 2/3;
+  max-width: 38rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.pdp-carousel__side {
+  width: 4rem;
+  margin-right: 2rem;
+}
+.pdp-carousel__side > div:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.side__img-container {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 1px solid #cacaca;
+  background-image: url("../../assets/dressBlue.png");
+  background-size: cover;
+  background-position: center;
+}
+.pdp-carousel__container {
+  width: calc(100% - 60px);
+}
+.pdp-carousel__slide {
+  height: 90.5rem;
+  width: 72.3rem;
+}
+.pdp-carousel__img {
+  width: 100%;
+  height: 90.5rem;
+}
+
+.pdp__add-carousel {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.pdp__add-carousel-heading {
+  margin-bottom: 4rem;
+}
+.pdp__add-carousel-prev-1 {
+  display: none;
+}
+.pdp__add-carousel-next-1 {
+  display: none;
+}
+.pdp__add-carousel-prev-2 {
+  color: #000000;
+}
+.pdp__add-carousel-next-2 {
+  color: #000000;
+}
+
+.pdp__details {
+  padding: 4rem 0 0 8rem;
+}
+.pdp__details-heading {
+  font-weight: 700;
+}
+.pdp__details-p-2 {
+  color: #000000;
+}
+.pdp__details-price-link {
+  font-weight: 600;
+  text-decoration: underline;
+}
+.pdp__details-icon-container {
+  display: flex;
+  align-items: center;
+}
+.pdp__details-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 1rem;
+}
+.pdp__select-link-container {
+  text-align: end;
+}
+.pdp__select-link {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 160%;
+  text-decoration: underline;
+  text-decoration-color: inherit;
+}
+.pdp__color-radio {
+  padding: 0.5rem 0;
+  margin-bottom: 3rem;
+}
+.color-radio__container {
+  width: 1.6rem;
+  height: 1.6rem;
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+}
+.color-radio__color {
+  text-transform: capitalize;
+}
+.color-radio__container > input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.color-radio__inputs {
+  display: flex;
+}
+.color-radio__inputs > label:not(:last-child) {
+  margin-right: 1rem;
+}
+.color-radio__container input:checked ~ .color-radio__item {
+  outline: 1px solid #000000;
+  outline-offset: 0.3rem;
+}
+.color-radio__item {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.color-radio--white {
+  background-color: #ffffff;
+  border: 1px solid #8f8f8f;
+}
+.color-radio--black {
+  background-color: #000000;
+}
+.color-radio--red {
+  background-color: #862626;
+}
+.color-radio__text {
+  font-weight: 400;
+}
+
+.pdp__cta {
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  height: 4.5rem;
+  width: 100%;
+  font-size: 1.6rem;
+  line-height: 160%;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+
+.pdp__info {
+  margin-bottom: 2.5rem;
+}
+.pdp__info-heading-group {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  line-height: 160%;
+  color: #000000;
+  margin-bottom: 2rem;
+}
+.info__heading {
+  font-weight: 400;
+  opacity: 0.3;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+}
+.info__heading--active {
+  opacity: 1;
+  border-bottom: 1px solid #000000;
+}
+.info__text {
+  display: none;
+  font-size: 1.4rem;
+  line-height: 160%;
+  font-weight: 400;
+}
+.info__text--visible {
+  display: block;
+}
+
+.pdp__extra-info {
+  width: 100%;
+  padding: 2.5rem 2rem;
+  border: 1px solid #f2f2f2;
+  text-align: center;
+}
+.extra-info__text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 160%;
+}
+.extra-info__link {
+  font-weight: 600;
+  text-decoration: underline;
+}
+.extra-info__icon-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+}
+.extra-info__icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.extra-info__icon {
+  width: 4rem;
+  margin-bottom: 1rem;
+}
+.extra-info__text--bold {
+  font-size: 1.4rem;
+  line-height: 160%;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media screen and (max-width: 1440px) {
+  .pdp-carousel__slide {
+    height: auto;
+    width: 100%;
+  }
+  .pdp-carousel__img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .pdp__details {
+    padding: 4rem 0 0 4em;
+  }
+}

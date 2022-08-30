@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/base/base.css" />
+    <link rel="stylesheet" href="../css/base/typography.css" />
+    <link rel="stylesheet" href="../css/base/utils.css" />
+    <link rel="stylesheet" href="../css/components/header.css" />
+    <link rel="stylesheet" href="../css/components/footer.css" />
+    <link rel="stylesheet" href="../css/components/product.css" />
+    <link rel="stylesheet" href="../css/pages/plp.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="../js/product.js" defer></script>
+    <script src="../js/plp.js" defer></script>
+
+    <title>Tumor || PLP</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__one mb--md">
+          <div class="header__one-menu--mobile">
+            <img
+              src="../../assets/icons/icon-menu.svg"
+              alt=""
+              class="one-menu__icon"
+            />
+          </div>
+          <div class="header__search">
+            <input
+              type="text"
+              class="header__search-input"
+              placeholder="SEARCH"
+            />
+            <img
+              src="../../assets/icons/icon-search.svg"
+              alt=""
+              class="header__search-icon"
+            />
+          </div>
+          <img src="../../assets/tomor.svg" alt="" class="header__logo" />
+          <div class="header__icon-group">
+            <img
+              src="../../assets/icons/icon-avatar.svg"
+              alt=""
+              class="header__icon header__icon-mobile"
+            />
+            <img
+              src="../../assets/icons/icon-like.svg"
+              alt=""
+              class="header__icon header__icon-mobile"
+            />
+            <img
+              src="../../assets/icons/icon-cart.svg"
+              alt=""
+              class="header__icon"
+            />
+          </div>
+        </div>
+        <nav class="header__navigation">
+          <div class="navigation__link-container">
+            <a href="#" class="navigation__link">New</a>
+          </div>
+          <div class="navigation__link-container">
+            <a href="#" class="navigation__link">Designers</a>
+          </div>
+          <div class="navigation__link-container">
+            <a href="#" class="navigation__link">Clothes</a>
+          </div>
+          <div class="navigation__link-container">
+            <a href="#" class="navigation__link">Shoes</a>
+          </div>
+          <div class="navigation__link-container">
+            <a href="#" class="navigation__link">Accessories</a>
+          </div>
+          <div class="navigation__link-container">
+            <a href="#" class="navigation__link">bags</a>
+          </div>
+          <div class="navigation__link-container">
+            <a href="#" class="navigation__link">jewlery</a>
+          </div>
+          <div class="navigation__link-container">
+            <a href="#" class="navigation__link">beauty</a>
+          </div>
+          <div class="navigation__link-container">
+            <a href="#" class="navigation__link">editorial</a>
+          </div>
+          <div class="navigation__link-container">
+            <a href="#" class="navigation__link">sale</a>
+          </div>
+        </nav>
+      </header>
+      <main class="main">
+        <div class="plp__header">
+          <img
+            src="../assets/icons/icon-gucci.svg"
+            alt=""
+            class="plp__header-logo"
+          />
+          <div class="plp__header-text">
+            <p class="p--tertiary">
+              Under the new vision of creative director Alessandro Michele, the
+              House has redefined luxury for the 21st century, further
+              reinforcing its position as one of the world’s most desirable
+              fashion houses.
+            </p>
+          </div>
+        </div>
+        <div class="plp__body">
+          <div class="plp__body-categories">
+            <div class="body-categories__container">
+              <img
+                src="../assets/icons/icon-people.svg"
+                alt=""
+                class="body-categories__icon"
+              />
+              <p class="p--tertiary body-categories__text">People</p>
+            </div>
+            <div class="body-categories__container">
+              <img
+                src="../assets/icons/icon-environment.svg"
+                alt=""
+                class="body-categories__icon"
+              />
+              <p class="p--tertiary body-categories__text">Environment</p>
+            </div>
+            <div class="body-categories__container">
+              <img
+                src="../assets/icons/icon-animal.svg"
+                alt=""
+                class="body-categories__icon"
+              />
+              <p class="p--tertiary body-categories__text">Animal</p>
+            </div>
+          </div>
+          <div class="plp__body-btns">
+            <label class="body-btns__filter">
+              <input
+                type="checkbox"
+                class="body-btns__input"
+                id="body-btns__filter"
+              />
+              <span class="body-btns__icon"></span>
+              <p class="p--secondary">Filter</p>
+            </label>
+            <label class="body-btns__sort-by">
+              <input
+                type="checkbox"
+                class="body-btns__input"
+                id="body-btns__sort"
+              />
+              <span class="body-btns__icon"></span>
+              <p class="p--secondary">Sort By</p>
+            </label>
+          </div>
+          <div class="plp__menu">
+            <button class="accordion">Categories</button>
+            <ul class="panel">
+              <li class="panel__item">New</li>
+              <li class="panel__item">Clothes</li>
+              <li class="panel__item">Shoes</li>
+              <li class="panel__item">Accessories</li>
+              <li class="panel__item">Bags</li>
+              <li class="panel__item">Jewlery</li>
+              <li class="panel__item">Beauty</li>
+              <li class="panel__item">Sale</li>
+            </ul>
+            <button class="accordion">Color</button>
+            <ul class="panel">
+              <li class="panel__item">Blue</li>
+              <li class="panel__item">Red</li>
+              <li class="panel__item">Black</li>
+            </ul>
+            <button class="accordion">Size</button>
+            <ul class="panel">
+              <li class="panel__item">Small</li>
+              <li class="panel__item">Medium</li>
+              <li class="panel__item">Large</li>
+            </ul>
+            <button class="accordion">Designer</button>
+            <ul class="panel">
+              <li class="panel__item">Gucci</li>
+              <li class="panel__item">Alexander Wang</li>
+              <li class="panel__item">Stella McCartney</li>
+              <li class="panel__item">Chloé</li>
+            </ul>
+            <button class="accordion">Sustainable brands</button>
+            <ul class="panel">
+              <li class="panel__item">Gucci</li>
+              <li class="panel__item">Alexander Wang</li>
+              <li class="panel__item">Stella McCartney</li>
+              <li class="panel__item">Chloé</li>
+            </ul>
+            <button class="accordion">sustainability</button>
+            <ul class="panel">
+              <li class="panel__item">Gucci</li>
+              <li class="panel__item">Alexander Wang</li>
+              <li class="panel__item">Stella McCartney</li>
+              <li class="panel__item">Chloé</li>
+            </ul>
+            <button class="accordion">price</button>
+            <ul class="panel">
+              <li class="panel__item">Gucci</li>
+              <li class="panel__item">Alexander Wang</li>
+              <li class="panel__item">Stella McCartney</li>
+              <li class="panel__item">Chloé</li>
+            </ul>
+          </div>
+          <div class="plp__carousel">
+            <div class="swiper plp__carousel-container">
+              <div class="swiper-wrapper plp__carousel-wrapper"></div>
+              <div class="swiper-button-prev plp__carousel-prev"></div>
+              <div class="swiper-button-next plp__carousel-next"></div>
+              <!-- <div class="swiper-pagination plp__carousel-pagination"></div> -->
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__header">
+          <h2 class="footer__header-heading heading--tertiary">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </h2>
+        </div>
+        <div class="footer__signup">
+          <h4 class="footer__signup-title mb--md">
+            Sign up for toward updates
+          </h4>
+          <p class="p--primary footer__signup-text">
+            Receiving our newsletter with access to our latest collections,
+            events and news.
+          </p>
+          <div class="footer__signup-input-container">
+            <input
+              type="emain"
+              class="footer__signup-input"
+              placeholder="Email Address"
+            />
+            <img
+              src="../assets/icons/icon-arrowR.svg"
+              alt=""
+              class="footer__signup-input-icon"
+            />
+          </div>
+          <div class="footer__signup-icons">
+            <img
+              src="../assets/icons/icon-instagram.svg"
+              alt=""
+              class="footer__signup-icon"
+            />
+            <img
+              src="../assets/icons/icon-facebook.svg"
+              alt=""
+              class="footer__signup-icon"
+            />
+          </div>
+        </div>
+        <div class="footer__link-group">
+          <ul class="footer__links">
+            <li class="footer__link-item">
+              <h4 class="footer__link-title">Customer care</h4>
+            </li>
+            <li class="footer__link-item">
+              <a href="" class="footer__link p--primary">FAQ</a>
+            </li>
+            <li class="footer__link-item">
+              <a href="" class="footer__link p--primary">Shipping & Returns</a>
+            </li>
+            <li class="footer__link-item">
+              <a href="" class="footer__link p--primary">Contact</a>
+            </li>
+          </ul>
+          <ul class="footer__links">
+            <li class="footer__link-item">
+              <h4 class="footer__link-title">company</h4>
+            </li>
+            <li class="footer__link-item">
+              <a href="" class="footer__link p--primary">About Us</a>
+            </li>
+            <li class="footer__link-item">
+              <a href="" class="footer__link p--primary">Journal</a>
+            </li>
+            <li class="footer__link-item">
+              <a href="" class="footer__link p--primary">Press</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copyright">&copy; 2021 Toward Brand</div>
+      </footer>
+    </div>
+  </body>
+</html>
